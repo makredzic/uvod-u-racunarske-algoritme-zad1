@@ -4,9 +4,14 @@
 
 // U ovoj datoteci se nalazi funkcija koju trebate implementirati
 
-// TODO Vas kod ovdje
 template <typename It, typename P>
 bool none_of(It begin, It end, P p) {
-  return false;
+	
+	It iter = begin;
+	while (iter != end){
+		if (p(*iter)) return false;
+		iter++;
+	}
+	return true;
 }
 

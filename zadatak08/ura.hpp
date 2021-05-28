@@ -4,9 +4,18 @@
 
 // U ovoj datoteci se nalazi funkcija koju trebate implementirati
 
-// TODO Vas kod ovdje
 template <typename It>
 It unique(It begin, It end) {
-  return begin;
+
+	It prev = begin;
+	begin++;
+	while (begin != end) {
+
+		if (*prev == *begin) {
+			
+		}
+
+	}
+
 }
 

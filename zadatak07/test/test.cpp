@@ -43,7 +43,7 @@ TEST_CASE("Test 2: Niz od jednog elemenata") {
   }
 
   SUBCASE("Ako uslov nije tacan") {
-    auto paran = [](int el) { return el % 2; };
+    auto paran = [](int el) { return el % 2 == 0; };
     auto r = ::partition(t.begin(), t.end(), paran);
     CHECK(r == t.begin());
   }
