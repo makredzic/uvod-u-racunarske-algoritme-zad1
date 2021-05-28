@@ -7,15 +7,14 @@
 template <typename It>
 It unique(It begin, It end) {
 
+	if (begin == end ) return end;
+
 	It prev = begin;
-	begin++;
-	while (begin != end) {
-
-		if (*prev == *begin) {
-			
-		}
-
+	while (++begin != end) {
+		if (*prev != *begin) *(++prev) = *begin;
 	}
+
+	return ++prev;
 
 }
 
