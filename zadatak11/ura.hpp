@@ -18,12 +18,10 @@ void insertionsort(It begin, It end) {
 
 	It border = marker1;
 
-	auto current = *begin;
-
 	while (border != end) {
 		
 		//kopija elementa koji treba da se smjesti u sortirani dio niza
-		current = *marker1;
+		auto current = *marker1;
 
 
 		// glavna petlja koja pomijera markere
